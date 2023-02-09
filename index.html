@@ -1,0 +1,50 @@
+ <!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Converse</title>
+    <link rel="icon" type="image/xicon" href="Screenshot_2022-10-14_7.25.05_PM-removebg-preview.png">
+    <meta name = "charset" charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width">
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <script src = "script.js"></script>
+    <script src= "socket.io/socket.io.js"></script>
+  </head>
+  <body onload = "onload()">
+      <audio id = "Ding" src = "Ding.mp3"> </audio>
+      <img src="Screenshot_2022-10-14_7.25.05_PM-removebg-preview.png" alt="Screenshot" width="80px"></img>
+      <h1 id = "Title"> Converse </h1>
+      <div id = "AccessPort">
+        <label id = "NameLabel">Name</label>
+        <input id = "NameInput" type = "text">
+        <br><br>
+        <label id = "IDLabel">Room ID</label>
+        <input id = "IDInput" value = "Room1" type = "text">
+        <input id = "ConnectButton" class = "Button" type = "submit" value = "Connect" onclick = "Connect()">
+      </div>
+      <h2 id = "RoomID">Room ID : None</h2>
+      <div id = "Chat">
+        <p id = "Message0" class = "Message"> - </p>
+        <p id = "Message1" class = "Message"> - </p>
+        <p id = "Message2" class = "Message"> - </p>
+        <p id = "Message3" class = "Message"> - </p>
+        <p id = "Message4" class = "Message"> - </p>
+        <p id = "Message5" class = "Message"> - </p>
+        <p id = "Message6" class = "Message"> - </p>
+        <label id = "MessageLabel">Message</label>
+        <input id = "ComposedMessage" type = "text">
+        <input id = "SendMessage" onclick="Send()" value = "Send" class = "Button" type = "submit">
+      </div>
+    </div>
+    </div>
+    </div>
+      <br>
+    </div>
+    <body>
+  <div>
+     <div class="wave"></div>
+     <div class="wave"></div>
+     <div class="wave"></div>
+  </div>
+</body>
+  </body>
+</html>
